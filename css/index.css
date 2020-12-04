@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: rgba(27, 89, 204, 0.2);
 }
@@ -23,7 +26,11 @@ header {
     position: absolute;
     margin-right: 62px;
     display: inline-block;
-    
+    border-radius: 50%;  
+}
+#linked:hover {
+    box-shadow: 5px 5px 5px rgba(27, 89, 204, 1);
+    background-color: white;
 }
 #git {
     position: absolute;
@@ -32,6 +39,10 @@ header {
     background-color: white;
     border-radius: 50%;
     margin-right: 1%;
+}
+#git:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    background-color: rgba(201, 201, 201, 0.6);
 }
 header h2 {
     font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
@@ -61,6 +72,10 @@ header h2 {
     text-decoration: none;
     color: white;
     padding: 6px 6px 6px 6px;
+}
+#sidebar a:hover {
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 #portraitSection {
@@ -105,24 +120,20 @@ header h2 {
     font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
     width: 170px;
     margin: 6px;
-    /*font-size: 16px;*/
     border-radius: 24px;
     box-shadow: 5px 5px 5px grey;
 }
 .topLevel h2 {
     padding: 12px;
-    
 }
 
 .subLevel { 
     display: grid;
     justify-content: center;
-    /*grid-template-columns: 48px 170px 1fr;*/
     grid-template-columns: 3.5% 1fr 83%;
     grid-template-rows: 48px;
-    
-    
 }
+
 .subLevel2 { 
     display: grid;
     justify-content: center;
@@ -139,23 +150,28 @@ section h3 {
     justify-content: center;
     height: 48px;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     background-color: rgba(27, 89, 204, 0.6);
     font-family: 'DM Serif Display', 'Times New Roman';
     border-radius: 24px;
     box-shadow: 3px 3px 5px grey;
+    transition: background-color .5s ease;
+}
+h3:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(27, 89, 204, 0.6);
+    cursor: pointer;
 }
 
 .bodyParagraph { 
-    display: grid;
+    display: none;
     justify-content: center;
-    /*grid-template-columns: 96px 1fr 25%;*/
     grid-template-columns: 7% 1fr 25%;
 }
 .workEx { 
-    display: grid;
+    display: none;
     justify-content: center;
-    /*grid-template-columns: 96px 1fr 25%;*/
     grid-template-columns: 7% 1fr 25%;
     padding: 6px 12px 6px 12px; 
 }
@@ -262,6 +278,11 @@ footer img {
     justify-content: left;
     margin-top: 12px;
     margin-left: 12px;
+    box-shadow: 8px 10px 10px  rgba(150, 151, 151, 0.8);
+}
+footer img:hover {
+    box-shadow: 5px 5px 5px rgba(27, 89, 204, 1);
+    background: rgba(150, 151, 151, 0.8);
 }
 #copyright {
     color: white;
@@ -291,6 +312,12 @@ footer h2 {
 }
 #nameAndLogo {
     display: inline;
+}
+.expand {
+    display: grid;
+}
+.active {
+    margin-bottom: 18px;
 }
 
 @media only screen and (max-width: 1200px) {

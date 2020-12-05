@@ -22,17 +22,21 @@ header {
     display: flex;
     justify-content: flex-end;
 }
-#linked {
+.linked {
     position: absolute;
     margin-right: 62px;
     display: inline-block;
     border-radius: 50%;  
 }
-#linked:hover {
+.linked img {
+    height: 50px;
+    width: 50px;
+}
+.linked:hover {
     box-shadow: 5px 5px 5px rgba(27, 89, 204, 1);
     background-color: white;
 }
-#git {
+.git {
     position: absolute;
     right: 0;
     margin-left: auto;
@@ -40,7 +44,12 @@ header {
     border-radius: 50%;
     margin-right: 1%;
 }
-#git:hover {
+.git img {
+    height: 50px;
+    width: 50px;
+    display: inline;
+}
+.git:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     background-color: rgba(201, 201, 201, 0.6);
 }
@@ -53,7 +62,30 @@ header h2 {
 #mobileNavLeft {
     display: none;
 }
+#secondLogo {
+    display: none;
+}
 
+.dropdown {
+    display: none;
+    background-color: #133f91;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+.dropdown a {
+    display: block;
+    font-family: 'Faustina', sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 6px 6px 6px 6px;
+    justify-content: center;
+    font-size: 14px;
+}
+.dropdown a:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
 #sidebar {
     Float: left;
     width: 104px;
@@ -157,7 +189,7 @@ section h3 {
     box-shadow: 3px 3px 5px grey;
     transition: background-color .5s ease;
 }
-h3:hover {
+section h3:hover {
     color: black;
     background-color: white;
     box-shadow: 3px 3px 5px rgba(27, 89, 204, 0.6);
@@ -319,6 +351,9 @@ footer h2 {
 .active {
     margin-bottom: 18px;
 }
+.drop {
+    display: block;
+}
 
 @media only screen and (max-width: 1200px) {
     header {
@@ -349,12 +384,12 @@ footer h2 {
         grid-template-rows: 48px;   
     }
     .bodyParagraph { 
-        display: grid;
+        display: none;
         justify-content: center;
         grid-template-columns: 10% 1fr 15%;
     }
     .workEx { 
-        display: grid;
+        display: none;
         justify-content: center;
         grid-template-columns: 10% 1fr 15%;
         margin-bottom: 0;
@@ -374,6 +409,9 @@ footer h2 {
     h4 {
         font-size: 14px;
     }
+    .expand {
+        display: grid;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -392,6 +430,15 @@ footer h2 {
         color: white;
         margin-left: 6px;
     }
+    #mobileNavLeft h2 {
+        margin-bottom: 0px;
+    }
+    #firstLogo {
+        display: none;
+    }
+    #secondLogo {
+        display: inline;
+    }
     .hamburger {
         display: block;
         margin-top: 18px;
@@ -399,6 +446,23 @@ footer h2 {
         height: 40px;
         margin-right: 6px;
         border-radius: 6px;
+    }
+    .hamburger:hover {
+        background-color: rgba(150, 151, 151, 1);
+        box-shadow: -3px 7px 3px rgba(27, 89, 204, 0.6);
+        cursor: pointer;
+    }
+    .dropdown {
+        /*display: block;*/
+        margin: 0px 18px 18px 18px;
+    }
+    .linked img {
+        height: 30px;
+        width: 30px;
+    }
+    .git img {
+        height: 30px;
+        width: 30px;
     }
     .bar1, .bar2, .bar3 {
         height: 5px;
@@ -439,4 +503,10 @@ footer h2 {
         justify-content: center;
         grid-template-columns: 6.5% 1fr 45%;
     }
+    .expand {
+        display: grid;
+    }
+    /*.drop {
+        display: block;
+    }*/
 }

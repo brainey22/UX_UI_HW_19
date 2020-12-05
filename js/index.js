@@ -10,3 +10,7 @@ $(".subLevel2").click(function() {
     $(this).siblings(".accordion").find(".bodyParagraph").toggleClass("expand");
     $(this).siblings(".accordion").find(".workEx").toggleClass("expand"); 
 });
+
+$(".hamburger").click(function() {
+    $(this).siblings(".dropdown").toggleClass("drop");
+});

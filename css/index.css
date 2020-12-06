@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-color: rgba(27, 89, 204, 0.2);
+    background-color: #ADCDFF;
 }
 header {
     display: inline-block;
@@ -13,8 +13,8 @@ header {
     
 }
 .headerFooter2{
-    background-color: #0D2C66;
-    box-shadow: 7px 7px 5px grey;
+    background-color: #3A86FF;
+    /*box-shadow: 7px 7px 5px grey;*/
 }
 #topIcons {
     position: relative;
@@ -50,8 +50,8 @@ header {
     display: inline;
 }
 .git:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-    background-color: rgba(201, 201, 201, 0.6);
+    box-shadow: 5px 5px 5px rgba(27, 89, 204, 1);
+    /*background-color: rgba(201, 201, 201, 1);*/
 }
 header h2 {
     font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
@@ -68,7 +68,7 @@ header h2 {
 
 .dropdown {
     display: none;
-    background-color: #133f91;
+    background-color: #8338EC;
     text-align: center;
     width: 100%;
     height: 200px;
@@ -90,13 +90,13 @@ header h2 {
     Float: left;
     width: 104px;
     height: 95%;
-    background-color: #133f91;
+    background-color: #8338EC;
     position: fixed;
     padding-top: 124px;
     z-index: 1;
     top: 0;
     overflow-x: hidden;
-    box-shadow: 3px 3px 5px grey;
+    /*box-shadow: 3px 3px 5px grey;*/
 }
 #sidebar a {
     display: block;
@@ -110,7 +110,7 @@ header h2 {
     font-size: 20px;
 }
 
-#portraitSection {
+.portraitSection {
     display: grid;
     grid-template-columns: 34% 1fr 38%;
     margin-top: 4%;
@@ -118,7 +118,9 @@ header h2 {
 }
 #portrait img {
     border-radius: 24px;
-    box-shadow: 7px 7px 5px grey;
+    /*box-shadow: 7px 7px 5px grey;*/
+    height: auto;
+    width: 100%;
 }
 
 #topSubject {
@@ -128,11 +130,11 @@ header h2 {
     
 }
 #topBlock {
-    background-color: #1B59CC;
+    background-color: #B61CA9;
     padding: 6px;
     font-size: 24px;
     border-radius: 24px;
-    box-shadow: 7px 7px 5px grey;
+    /*box-shadow: 7px 7px 5px grey;*/
     text-align: center;
 }
 #topBlock h1 {
@@ -147,13 +149,14 @@ header h2 {
 }
 
 .topLevel {
-    background-color: rgba(27, 89, 204, 0.8);
+    background-color: #E90065;
     color: white;
     font-family: 'DM Serif Display', 'Times New Roman', Times, serif;
     width: 170px;
     margin: 6px;
     border-radius: 24px;
-    box-shadow: 5px 5px 5px grey;
+    text-align: center;
+    /*box-shadow: 5px 5px 5px grey;*/
 }
 .topLevel h2 {
     padding: 12px;
@@ -175,7 +178,7 @@ header h2 {
 }
 
 section h3 {
-    color:white;
+    color: white;
     text-align: center;
     display: flex;
     align-items: center;
@@ -183,16 +186,16 @@ section h3 {
     height: 48px;
     margin-top: 0;
     margin-bottom: 0px;
-    background-color: rgba(27, 89, 204, 0.6);
+    background-color: #EC0E1B;
     font-family: 'DM Serif Display', 'Times New Roman';
     border-radius: 24px;
-    box-shadow: 3px 3px 5px grey;
+    box-shadow: 3px 3px 5px #F87F29;
     transition: background-color .5s ease;
 }
 section h3:hover {
     color: black;
     background-color: white;
-    box-shadow: 3px 3px 5px rgba(27, 89, 204, 0.6);
+    box-shadow: 3px 3px 5px #942FD6;
     cursor: pointer;
 }
 
@@ -208,26 +211,26 @@ section h3:hover {
     padding: 6px 12px 6px 12px; 
 }
 .p1 {
-    color:white;
+    color:black;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: start;
     padding: 6px 12px 6px 12px;
     margin-bottom: 9px;
-    background-color: rgba(27, 89, 204, 0.4);
+    background-color: #FFBE0B;
     font-family: 'Faustina', sans-serif;
     font-size: 18px;
     border-radius: 24px;
     text-align: left;
-    box-shadow: 1px 1px 5px grey;
+    /*box-shadow: 1px 1px 5px grey;*/
 }
 #oneSection {
     margin-top: 18px;
     margin-bottom: 18px;
 }
 .p3 {
-    color:white;
+    color:black;
     text-align: center;
     display: flex;
     align-items: center;
@@ -235,15 +238,15 @@ section h3:hover {
     padding: 6px 12px 6px 12px;
     margin-top: 9px;
     margin-bottom: 18px;
-    background-color: rgba(27, 89, 204, 0.4);
+    background-color: #FFBE0B;
     font-family: 'Faustina', sans-serif;
     font-size: 18px;
     border-radius: 24px;
     text-align: left;
-    box-shadow: 1px 1px 5px grey;
+    /*box-shadow: 1px 1px 5px grey;*/
 }
 .p2 {
-    color:white;
+    color:black;
     text-align: center;
     display: flex;
     align-items: center;
@@ -251,15 +254,15 @@ section h3:hover {
     padding: 6px 12px 6px 12px;
     margin-top: 9px;
     margin-bottom: 9px;
-    background-color: rgba(27, 89, 204, 0.4);
+    background-color: #FFBE0B;
     font-family: 'Faustina', sans-serif;
     font-size: 18px;
     border-radius: 24px;
     text-align: left;
-    box-shadow: 1px 1px 5px grey;
+    /*box-shadow: 1px 1px 5px grey;*/
 }
 .pEnd {
-    color:white;
+    color: black;
     text-align: center;
     display: flex;
     align-items: center;
@@ -267,12 +270,12 @@ section h3:hover {
     padding: 6px 12px 6px 12px;
     margin-top: 9px;
     margin-bottom: 36px;
-    background-color: rgba(27, 89, 204, 0.4);
+    background-color: #FFBE0B;
     font-family: 'Faustina', sans-serif;
     font-size: 18px;
     border-radius: 24px;
     text-align: left;
-    box-shadow: 1px 1px 5px grey;
+    /*box-shadow: 1px 1px 5px grey;*/
 }
 
 .projectName {
@@ -288,15 +291,15 @@ section h3:hover {
     align-items: center;
     justify-content: start;
     border-radius: 24px; 
-    box-shadow: 2px 2px 5px grey;
+    box-shadow: 2px 2px 5px #F87F29;
 }
 
 footer {
     margin-left: 104px;
     height: 120px;
-    background-color: black;
+    background-color: #003C9C;
     display: flex;
-    box-shadow: 3px 3px 5px grey;
+    /*box-shadow: 3px 3px 5px grey;*/
 }
 footer h3 {
     color: white;
@@ -352,7 +355,7 @@ footer h2 {
     margin-bottom: 18px;
 }
 .drop {
-    display: block;
+    display: none;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -412,6 +415,9 @@ footer h2 {
     .expand {
         display: grid;
     }
+    .drop {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -422,7 +428,7 @@ footer h2 {
         height: 60px;
         display: grid;
         grid-template-columns: 1fr 52px;
-        background-color: #0D2C66;
+        background-color: #3A86FF;
     }
     #mobileNavLeft {
         display: block;
@@ -446,6 +452,7 @@ footer h2 {
         height: 40px;
         margin-right: 6px;
         border-radius: 6px;
+
     }
     .hamburger:hover {
         background-color: rgba(150, 151, 151, 1);
@@ -453,16 +460,25 @@ footer h2 {
         cursor: pointer;
     }
     .dropdown {
-        /*display: block;*/
         margin: 0px 18px 18px 18px;
+        position: relative;
+        background-size: contain;
+        justify-content: center;
     }
     .linked img {
         height: 30px;
         width: 30px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .linked {
+        background-color: white;
+        margin-right: 0;
     }
     .git img {
         height: 30px;
         width: 30px;
+        justify-content: flex-start;
     }
     .bar1, .bar2, .bar3 {
         height: 5px;
@@ -481,11 +497,12 @@ footer h2 {
     footer {
         margin-left: 0px;
     }
-    #portraitSection {
+    .portraitSection {
         display: grid;
         grid-template-columns: 25% 1fr 25%;
         margin-top: 4%;
         margin-bottom: 2%;
+        
     }
     #topSubject {
         display: grid;
@@ -506,7 +523,10 @@ footer h2 {
     .expand {
         display: grid;
     }
-    /*.drop {
+    .drop {
         display: block;
-    }*/
+    }
+    .expansion {
+        margin-top: 200px;
+    }
 }

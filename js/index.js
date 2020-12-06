@@ -13,4 +13,5 @@ $(".subLevel2").click(function() {
 
 $(".hamburger").click(function() {
     $(this).siblings(".dropdown").toggleClass("drop");
+    $(this).parent().siblings(".portraitSection").toggleClass("expansion");
 });
